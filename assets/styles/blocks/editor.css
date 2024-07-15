@@ -1,0 +1,27 @@
+:root {
+  --font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-size: var(--text-md);
+}
+
+.editor {
+  flex-grow: 1;
+  width: 100%;
+  max-width: var(--max-width-sm);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: var(--font-size);
+  line-height: 1.625;
+  font-family: var(--font-family);
+  /*hyphens: auto;
+  word-break: break-all;*/
+}
+
+.editor div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.editor b {
+  font-weight: 600;
+}

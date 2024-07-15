@@ -1,0 +1,134 @@
+.settings {
+  position: relative;
+}
+
+.settings--is-visible::before {
+  position: fixed;
+  inset: 0;
+  content: '';
+}
+
+.settings--is-visible .settings__tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.settings__inner {
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  top: calc(100% + var(--border-width-medium));
+  right: 0;
+  width: 30rem;
+  max-height: 48rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translateY(calc(var(--border-width-medium) * -1));
+  /*border: var(--border-width-thin) solid #e5e5e5;*/
+  border-radius: calc(var(--space-xs) + var(--radius-lg));
+  background-color: #f5f5f5;
+  /*box-shadow: var(--shadow-lg);*/
+  opacity: 0;
+  transition-delay: var(--transition-duration);
+  transition-duration: var(--transition-duration);
+  transition-property: all;
+}
+
+.settings--is-visible .settings__inner {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.settings__header,
+.settings__content,
+.settings__footer {
+  padding: var(--space-xs);
+}
+
+.settings__header,
+.settings__content {
+  border-bottom: var(--border-width-thin) solid #e5e5e5;
+}
+
+.settings__title {
+  font-weight: 500;
+  font-size: var(--text-lg);
+  line-height: 1.2;
+}
+
+.settings__fieldset {
+  border: 0;
+}
+
+.settings__group:not(:last-child) {
+  margin-bottom: var(--space-xs);
+}
+
+.settings__label {
+  font-size: var(--text-md);
+}
+
+.settings__label:not(:last-child) {
+  margin-bottom: var(--space-2xs);
+}
+
+.settings__actions {
+  display: grid;
+  grid-gap: var(--space-2xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.settings__actions-button {
+  width: 100%;
+  padding: var(--space-xs) var(--space-md);
+  border-width: var(--border-width-thin);
+  border-style: solid;
+  border-radius: 50rem;
+  transition-property: background-color, border-color;
+}
+
+.settings__clear {
+  border-color: #e5e5e5;
+  background-color: transparent;
+}
+
+.settings__clear:hover {
+  background-color: #e5e5e5;
+}
+
+.settings__typograf {
+  border-color: #171717;
+  background-color: #171717;
+  color: #fff;
+}
+
+.settings__typograf:hover {
+  border-color: #262626;
+  background-color: #262626;
+}
+
+@media screen and (max-width: 48rem) {
+  .settings__inner {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    max-height: 100vh;
+    transform: translateY(100%);
+    /*border: 0;*/
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    /*box-shadow: none;*/
+  }
+  @supports (height: 100dvh) {
+    .settings__inner {
+      max-height: 100dvh;
+    }
+  }
+  .settings--is-visible .settings__inner {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<!-- Design by Stepan Lyubavtsev (https://lyubavtsev.ru/) -->
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Черновик</title>
+    <meta name="title" content="Черновик" />
+    <meta content="website" property="og:type" />
+    <meta content="" property="og:url" />
+    <meta content="Черновик" property="og:title" />
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="" property="twitter:url" />
+    <meta content="Черновик" property="twitter:title" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/styles/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <svg class="visually-hidden" aria-hidden="true">
+      <defs>
+        <symbol id="bold" viewBox="0 0 32 32">
+          <path
+            d="M18.25 25H9V7H17.5C18.5022 7.00006 19.4834 7.28695 20.3277 7.82679C21.172 8.36662 21.8442 9.13684 22.2649 10.0465C22.6855 10.9561 22.837 11.9671 22.7015 12.96C22.5659 13.953 22.149 14.8864 21.5 15.65C22.3477 16.328 22.9645 17.252 23.2653 18.295C23.5662 19.3379 23.5364 20.4485 23.18 21.4738C22.8236 22.4991 22.1581 23.3887 21.2753 24.0202C20.3924 24.6517 19.3355 24.994 18.25 25ZM12 22H18.23C18.5255 22 18.8181 21.9418 19.091 21.8287C19.364 21.7157 19.6121 21.5499 19.821 21.341C20.0299 21.1321 20.1957 20.884 20.3087 20.611C20.4218 20.3381 20.48 20.0455 20.48 19.75C20.48 19.4545 20.4218 19.1619 20.3087 18.889C20.1957 18.616 20.0299 18.3679 19.821 18.159C19.6121 17.9501 19.364 17.7843 19.091 17.6713C18.8181 17.5582 18.5255 17.5 18.23 17.5H12V22ZM12 14.5H17.5C17.7955 14.5 18.0881 14.4418 18.361 14.3287C18.634 14.2157 18.8821 14.0499 19.091 13.841C19.2999 13.6321 19.4657 13.384 19.5787 13.111C19.6918 12.8381 19.75 12.5455 19.75 12.25C19.75 11.9545 19.6918 11.6619 19.5787 11.389C19.4657 11.116 19.2999 10.8679 19.091 10.659C18.8821 10.4501 18.634 10.2843 18.361 10.1713C18.0881 10.0582 17.7955 10 17.5 10H12V14.5Z"
+          ></path>
+        </symbol>
+        <symbol id="italic" viewBox="0 0 32 32">
+          <path
+            d="M25 9V7H12V9H17.14L12.77 23H7V25H20V23H14.86L19.23 9H25Z"
+          ></path>
+        </symbol>
+        <symbol id="locked" viewBox="0 0 32 32">
+          <path
+            d="M24 14H22V8C22 6.4087 21.3679 4.88258 20.2426 3.75736C19.1174 2.63214 17.5913 2 16 2C14.4087 2 12.8826 2.63214 11.7574 3.75736C10.6321 4.88258 10 6.4087 10 8V14H8C7.46957 14 6.96086 14.2107 6.58579 14.5858C6.21071 14.9609 6 15.4696 6 16V28C6 28.5304 6.21071 29.0391 6.58579 29.4142C6.96086 29.7893 7.46957 30 8 30H24C24.5304 30 25.0391 29.7893 25.4142 29.4142C25.7893 29.0391 26 28.5304 26 28V16C26 15.4696 25.7893 14.9609 25.4142 14.5858C25.0391 14.2107 24.5304 14 24 14ZM12 8C12 6.93913 12.4214 5.92172 13.1716 5.17157C13.9217 4.42143 14.9391 4 16 4C17.0609 4 18.0783 4.42143 18.8284 5.17157C19.5786 5.92172 20 6.93913 20 8V14H12V8ZM24 28H8V16H24V28Z"
+          ></path>
+        </symbol>
+        <symbol id="settings" viewBox="0 0 32 32">
+          <path
+            d="M27.0003 16.76C27.0003 16.51 27.0003 16.26 27.0003 16C27.0003 15.74 27.0003 15.49 27.0003 15.23L28.9203 13.55C29.2742 13.2381 29.5064 12.811 29.576 12.3444C29.6455 11.8778 29.5478 11.4016 29.3003 11L26.9403 7.00001C26.7649 6.69627 26.5127 6.44399 26.2091 6.26847C25.9054 6.09295 25.561 6.00037 25.2103 6.00001C24.9929 5.99834 24.7767 6.03212 24.5703 6.10001L22.1403 6.92001C21.7207 6.64122 21.2831 6.39066 20.8303 6.17001L20.3203 3.65001C20.2288 3.18961 19.9783 2.77605 19.6127 2.48171C19.2471 2.18737 18.7896 2.03102 18.3203 2.04001H13.6403C13.171 2.03102 12.7134 2.18737 12.3478 2.48171C11.9822 2.77605 11.7317 3.18961 11.6403 3.65001L11.1303 6.17001C10.6742 6.39061 10.2332 6.64116 9.81025 6.92001L7.43025 6.06001C7.22155 6.00563 7.00543 5.98537 6.79025 6.00001C6.43953 6.00037 6.09506 6.09295 5.79142 6.26847C5.48777 6.44399 5.23562 6.69627 5.06025 7.00001L2.70025 11C2.46684 11.401 2.3801 11.8707 2.4549 12.3286C2.5297 12.7865 2.76138 13.2041 3.11025 13.51L5.00025 15.24C5.00025 15.49 5.00025 15.74 5.00025 16C5.00025 16.26 5.00025 16.51 5.00025 16.77L3.11025 18.45C2.75152 18.758 2.51351 19.1831 2.43845 19.65C2.36339 20.1168 2.45615 20.5951 2.70025 21L5.06025 25C5.23562 25.3037 5.48777 25.556 5.79142 25.7315C6.09506 25.9071 6.43953 25.9996 6.79025 26C7.0076 26.0017 7.22377 25.9679 7.43025 25.9L9.86025 25.08C10.2798 25.3588 10.7174 25.6094 11.1703 25.83L11.6803 28.35C11.7717 28.8104 12.0222 29.224 12.3878 29.5183C12.7534 29.8126 13.211 29.969 13.6803 29.96H18.4003C18.8696 29.969 19.3271 29.8126 19.6927 29.5183C20.0583 29.224 20.3088 28.8104 20.4003 28.35L20.9103 25.83C21.3663 25.6094 21.8073 25.3589 22.2303 25.08L24.6503 25.9C24.8567 25.9679 25.0729 26.0017 25.2903 26C25.641 25.9996 25.9854 25.9071 26.2891 25.7315C26.5927 25.556 26.8449 25.3037 27.0203 25L29.3003 21C29.5337 20.599 29.6204 20.1294 29.5456 19.6714C29.4708 19.2135 29.2391 18.7959 28.8903 18.49L27.0003 16.76ZM25.2103 24L21.7803 22.84C20.9773 23.5201 20.0596 24.0518 19.0703 24.41L18.3603 28H13.6403L12.9303 24.45C11.9487 24.0816 11.036 23.5509 10.2303 22.88L6.79025 24L4.43025 20L7.15025 17.6C6.96535 16.5649 6.96535 15.5052 7.15025 14.47L4.43025 12L6.79025 8.00001L10.2203 9.16001C11.0232 8.4799 11.9409 7.94826 12.9303 7.59001L13.6403 4.00001H18.3603L19.0703 7.55001C20.0518 7.91843 20.9645 8.44915 21.7703 9.12001L25.2103 8.00001L27.5703 12L24.8503 14.4C25.0352 15.4352 25.0352 16.4949 24.8503 17.53L27.5703 20L25.2103 24Z"
+          ></path>
+          <path
+            d="M16 22C14.8133 22 13.6533 21.6481 12.6666 20.9888C11.6799 20.3295 10.9109 19.3925 10.4567 18.2961C10.0026 17.1997 9.88378 15.9933 10.1153 14.8295C10.3468 13.6656 10.9182 12.5965 11.7574 11.7574C12.5965 10.9182 13.6656 10.3468 14.8295 10.1153C15.9933 9.88378 17.1997 10.0026 18.2961 10.4567C19.3925 10.9109 20.3295 11.6799 20.9888 12.6666C21.6481 13.6533 22 14.8133 22 16C22.008 16.7902 21.8583 17.574 21.5596 18.3056C21.2609 19.0371 20.8193 19.7018 20.2605 20.2605C19.7018 20.8193 19.0371 21.2609 18.3056 21.5596C17.574 21.8583 16.7902 22.008 16 22ZM16 12C15.4713 11.9877 14.9457 12.0827 14.4548 12.2794C13.9639 12.4761 13.5181 12.7702 13.1442 13.1442C12.7702 13.5181 12.4761 13.9639 12.2794 14.4548C12.0827 14.9457 11.9877 15.4713 12 16C11.9877 16.5287 12.0827 17.0543 12.2794 17.5452C12.4761 18.0361 12.7702 18.4819 13.1442 18.8559C13.5181 19.2298 13.9639 19.524 14.4548 19.7206C14.9457 19.9173 15.4713 20.0123 16 20C16.5287 20.0123 17.0543 19.9173 17.5452 19.7206C18.0361 19.524 18.4819 19.2298 18.8559 18.8559C19.2298 18.4819 19.524 18.0361 19.7206 17.5452C19.9173 17.0543 20.0123 16.5287 20 16C20.0123 15.4713 19.9173 14.9457 19.7206 14.4548C19.524 13.9639 19.2298 13.5181 18.8559 13.1442C18.4819 12.7702 18.0361 12.4761 17.5452 12.2794C17.0543 12.0827 16.5287 11.9877 16 12Z"
+          ></path>
+        </symbol>
+        <symbol id="strikethrough" viewBox="0 0 32 32">
+          <path
+            d="M28 15H17.9563C17.5041 14.8763 17.0526 14.7676 16.6182 14.6648C13.8105 14.0007 12.2222 13.5142 12.2222 11.2417C12.1994 10.8493 12.2574 10.4565 12.3927 10.0875C12.528 9.71851 12.7377 9.38127 13.0088 9.09669C13.8584 8.39803 14.9226 8.01313 16.0225 8.00669C18.8516 7.93669 20.1572 8.89609 21.2236 10.3567L22.8389 9.17749C22.083 8.09172 21.0524 7.22607 19.8525 6.66902C18.6525 6.11197 17.3261 5.88348 16.0089 6.00689C14.3909 6.01722 12.8301 6.60647 11.6089 7.66799C11.1461 8.13743 10.7843 8.69668 10.5459 9.31127C10.3075 9.92586 10.1975 10.5828 10.2227 11.2415C10.1789 11.9625 10.3143 12.6832 10.617 13.339C10.9197 13.9949 11.3802 14.5656 11.9573 15H4V17H17.6519C19.6187 17.57 20.7951 18.3123 20.8252 20.3579C20.8577 20.795 20.7977 21.234 20.6491 21.6463C20.5005 22.0587 20.2667 22.4351 19.9629 22.751C18.9048 23.585 17.5902 24.0264 16.2432 24C15.2377 23.9708 14.252 23.7134 13.3606 23.2472C12.4692 22.7809 11.6956 22.1181 11.0981 21.3088L9.5649 22.593C10.3416 23.6281 11.3438 24.4728 12.4955 25.0631C13.6471 25.6534 14.918 25.9738 16.2119 26C16.2207 25.9988 16.2539 26 16.3119 26C18.1587 26.0213 19.9512 25.3755 21.36 24.1812C21.86 23.677 22.2487 23.0736 22.501 22.41C22.7533 21.7463 22.8636 21.0371 22.8248 20.3281C22.8623 19.1154 22.4532 17.9311 21.6753 17H28V15Z"
+          ></path>
+        </symbol>
+        <symbol id="underline" viewBox="0 0 32 32">
+          <path d="M28 26H4V28H28V26Z"></path>
+          <path
+            d="M16 23C14.1435 23 12.363 22.2625 11.0503 20.9497C9.7375 19.637 9 17.8565 9 16V5H11V16C11 17.3261 11.5268 18.5979 12.4645 19.5355C13.4021 20.4732 14.6739 21 16 21C17.3261 21 18.5979 20.4732 19.5355 19.5355C20.4732 18.5979 21 17.3261 21 16V5H23V16C23 17.8565 22.2625 19.637 20.9497 20.9497C19.637 22.2625 17.8565 23 16 23Z"
+          ></path>
+        </symbol>
+        <symbol id="unlocked" viewBox="0 0 32 32">
+          <path
+            d="M24 14H12V8C12 6.93913 12.4214 5.92172 13.1716 5.17157C13.9217 4.42143 14.9391 4 16 4C17.0609 4 18.0783 4.42143 18.8284 5.17157C19.5786 5.92172 20 6.93913 20 8H22C22 6.4087 21.3679 4.88258 20.2426 3.75736C19.1174 2.63214 17.5913 2 16 2C14.4087 2 12.8826 2.63214 11.7574 3.75736C10.6321 4.88258 10 6.4087 10 8V14H8C7.46957 14 6.96086 14.2107 6.58579 14.5858C6.21071 14.9609 6 15.4696 6 16V28C6 28.5304 6.21071 29.0391 6.58579 29.4142C6.96086 29.7893 7.46957 30 8 30H24C24.5304 30 25.0391 29.7893 25.4142 29.4142C25.7893 29.0391 26 28.5304 26 28V16C26 15.4696 25.7893 14.9609 25.4142 14.5858C25.0391 14.2107 24.5304 14 24 14ZM24 28H8V16H24V28Z"
+          ></path>
+        </symbol>
+        <symbol id="vertical-overflow-menu" viewBox="0 0 32 32">
+          <path
+            d="M16 10C17.1046 10 18 9.10457 18 8C18 6.89543 17.1046 6 16 6C14.8954 6 14 6.89543 14 8C14 9.10457 14.8954 10 16 10Z"
+          ></path>
+          <path
+            d="M16 18C17.1046 18 18 17.1046 18 16C18 14.8954 17.1046 14 16 14C14.8954 14 14 14.8954 14 16C14 17.1046 14.8954 18 16 18Z"
+          ></path>
+          <path
+            d="M16 26C17.1046 26 18 25.1046 18 24C18 22.8954 17.1046 22 16 22C14.8954 22 14 22.8954 14 24C14 25.1046 14.8954 26 16 26Z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+    <h1 class="visually-hidden">Черновик</h1>
+    <div class="draft">
+      <header class="draft__header">
+        <div class="toolbar" aria-label="Панель инструментов">
+          <div class="toolbar__left"></div>
+          <div class="toolbar__center">
+            <ul class="toolbar__list">
+              <li class="toolbar__item">
+                <button
+                  class="button toolbar__button"
+                  data-command="bold"
+                  type="button"
+                >
+                  <svg
+                    class="button__icon toolbar__button-icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  >
+                    <use href="#bold"></use>
+                  </svg>
+                  <span class="visually-hidden">Сделать текст полужирным</span>
+                </button>
+                <div class="tooltip toolbar__tooltip">
+                  <span class="tooltip__label" aria-hidden="true"
+                    >Полужирный</span
+                  >
+                  <kbd class="tooltip__shortcut">Command–B</kbd>
+                </div>
+              </li>
+              <li class="toolbar__item">
+                <button
+                  class="button toolbar__button"
+                  data-command="italic"
+                  type="button"
+                >
+                  <svg
+                    class="button__icon toolbar__button-icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  >
+                    <use href="#italic"></use>
+                  </svg>
+                  <span class="visually-hidden">Сделать текст курсивным</span>
+                </button>
+                <div class="tooltip toolbar__tooltip">
+                  <span class="tooltip__label" aria-hidden="true">Курсив</span>
+                  <kbd class="tooltip__shortcut">Command–I</kbd>
+                </div>
+              </li>
+              <li class="toolbar__item">
+                <button
+                  class="button toolbar__button"
+                  data-command="underline"
+                  type="button"
+                >
+                  <svg
+                    class="button__icon toolbar__button-icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  >
+                    <use href="#underline"></use>
+                  </svg>
+                  <span class="visually-hidden"
+                    >Сделать текст подчёркнутым</span
+                  >
+                </button>
+                <div class="tooltip toolbar__tooltip">
+                  <span class="tooltip__label" aria-hidden="true"
+                    >Подчёркнутый</span
+                  >
+                  <kbd class="tooltip__shortcut">Command–U</kbd>
+                </div>
+              </li>
+              <li class="toolbar__item">
+                <button
+                  class="button toolbar__button"
+                  data-command="strikethrough"
+                  type="button"
+                >
+                  <svg
+                    class="button__icon toolbar__button-icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  >
+                    <use href="#strikethrough"></use>
+                  </svg>
+                  <span class="visually-hidden"
+                    >Сделайте текст зачёркнутым</span
+                  >
+                </button>
+                <div class="tooltip toolbar__tooltip">
+                  <span class="tooltip__label" aria-hidden="true"
+                    >Зачёркнутый</span
+                  >
+                  <kbd class="tooltip__shortcut">Command–Shift–S</kbd>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="toolbar__right">
+            <div class="toolbar__lock">
+              <button
+                class="button toolbar__button toolbar__lock-button"
+                type="button"
+              >
+                <svg
+                  class="button__icon toolbar__button-icon toolbar__lock-button-icon"
+                  aria-hidden="true"
+                  width="32"
+                  height="32"
+                >
+                  <use href="#unlocked"></use>
+                </svg>
+                <span class="visually-hidden toolbar__lock-button-text"
+                  >Запретить редактирование</span
+                >
+              </button>
+            </div>
+            <div class="settings toolbar__settings">
+              <button
+                class="button toolbar__button settings__trigger"
+                type="button"
+              >
+                <svg
+                  class="button__icon toolbar__button-icon settings__trigger-icon"
+                  aria-hidden="true"
+                  width="32"
+                  height="32"
+                >
+                  <use href="#vertical-overflow-menu"></use>
+                </svg>
+                <span class="visually-hidden">Показать настройки</span>
+              </button>
+              <div class="settings__inner">
+                <header class="settings__header">
+                  <div class="settings__title">Настройки</div>
+                </header>
+                <div class="settings__content">
+                  <form class="settings__form">
+                    <fieldset class="settings__fieldset">
+                      <legend class="visually-hidden">Шрифт</legend>
+                      <div class="settings__group">
+                        <div class="settings__label">Семейство</div>
+                        <div
+                          class="switch switch--font-family settings__control"
+                        >
+                          <label class="switch__item">
+                            <input
+                              class="switch__control"
+                              name="font-family"
+                              type="radio"
+                              value="sans-serif"
+                            />
+                            <span class="switch__label">
+                              <span
+                                class="switch__font-sample switch__font-sample--sans-serif"
+                                >Aa</span
+                              >
+                              <span class="switch__font-type">Без засечек</span>
+                            </span>
+                          </label>
+                          <label class="switch__item">
+                            <input
+                              class="switch__control"
+                              name="font-family"
+                              type="radio"
+                              value="serif"
+                            />
+                            <span class="switch__label">
+                              <span
+                                class="switch__font-sample switch__font-sample--serif"
+                                >Aa</span
+                              >
+                              <span class="switch__font-type">С засечками</span>
+                            </span>
+                          </label>
+                          <label class="switch__item">
+                            <input
+                              class="switch__control"
+                              name="font-family"
+                              type="radio"
+                              value="monospace"
+                            />
+                            <span class="switch__label">
+                              <span
+                                class="switch__font-sample switch__font-sample--monospace"
+                                >Aa</span
+                              >
+                              <span class="switch__font-type">Моно</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="settings__group">
+                        <div class="settings__label">Размер</div>
+                        <div class="switch switch--font-size settings__control">
+                          <label class="switch__item">
+                            <input
+                              class="switch__control"
+                              name="font-size"
+                              type="radio"
+                              value="small"
+                            />
+                            <span class="switch__label">Мелкий</span>
+                          </label>
+                          <label class="switch__item">
+                            <input
+                              class="switch__control"
+                              name="font-size"
+                              type="radio"
+                              value="medium"
+                            />
+                            <span class="switch__label">Средний</span>
+                          </label>
+                          <label class="switch__item">
+                            <input
+                              class="switch__control"
+                              name="font-size"
+                              type="radio"
+                              value="large"
+                            />
+                            <span class="switch__label">Крупный</span>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <footer class="settings__footer">
+                  <div class="settings__actions">
+                    <button
+                      class="button settings__actions-button settings__clear"
+                      type="button"
+                    >
+                      Очистить
+                    </button>
+                    <button
+                      class="button settings__actions-button settings__typograf"
+                      type="button"
+                    >
+                      Оттипографить
+                    </button>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="draft__content">
+        <div
+          class="editor"
+          aria-label="Текстовый редактор"
+          contenteditable="true"
+          tabindex="-1"
+        ></div>
+      </div>
+    </div>
+    <script src="/assets/scripts/index.js" type="module"></script>
+  </body>
+</html>

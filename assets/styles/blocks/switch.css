@@ -1,0 +1,111 @@
+.switch {
+  padding: var(--border-width-medium);
+  border: var(--border-width-thin) solid #e5e5e5;
+  border-radius: var(--radius-lg);
+}
+
+.switch--font-family,
+.switch--font-size {
+  display: grid;
+  /*grid-gap: var(--border-width-medium);*/
+  grid-gap: calc(var(--border-width-medium) * 2 + var(--border-width-thin));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.switch__item {
+  display: inline-flex;
+  position: relative;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 10rem;
+  text-align: center;
+  user-select: none;
+}
+
+.switch__control {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.switch__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: calc(var(--space-xs) - var(--border-width-medium))
+    calc(var(--space-sm) - var(--border-width-medium));
+  overflow: hidden;
+  border-radius: calc(
+    var(--radius-lg) - var(--border-width-medium) - var(--border-width-thin)
+  );
+  color: #d4d4d4;
+  font-size: var(--text-md);
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition-duration: var(--transition-duration);
+  transition-property: background-color, box-shadow, color;
+}
+
+.switch__control:focus ~ .switch__label {
+  box-shadow:
+    0 0 0 var(--border-width-thin) #93c5fd,
+    0 0 0 var(--border-width-medium) #dbeafe;
+}
+
+.switch__control:hover ~ .switch__label {
+  color: #171717;
+}
+
+.switch__control:checked ~ .switch__label {
+  background-color: #fff;
+  box-shadow: var(--shadow-xs);
+  color: #171717;
+}
+
+.switch__control:checked:focus ~ .switch__label {
+  box-shadow:
+    0 0 0 var(--border-width-thin) #93c5fd,
+    0 0 0 var(--border-width-medium) #dbeafe;
+}
+
+.switch__item:not(:last-child) .switch__label:before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: calc(var(--border-width-medium) * -1 - var(--border-width-thin));
+  bottom: 0;
+  border-right: var(--border-width-thin) solid #e5e5e5;
+  content: '';
+}
+
+.switch__font-sample {
+  font-size: var(--text-xl);
+  line-height: 1.1;
+}
+
+.switch__font-sample--sans-serif {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.switch__font-sample--serif {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.switch__font-sample--monospace {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.switch__font-type {
+  color: #d4d4d4;
+  font-size: var(--text-sm);
+}
+
+@media screen and (max-width: 48rem) {
+  .switch__item {
+    max-width: none;
+  }
+}

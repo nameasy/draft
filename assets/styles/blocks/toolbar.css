@@ -1,0 +1,94 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar__left {
+  flex-shrink: 0;
+  flex-basis: 6rem;
+}
+
+.toolbar__center {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.toolbar__right {
+  flex-shrink: 0;
+  flex-basis: 6rem;
+  justify-content: flex-end;
+}
+
+.toolbar__right,
+.toolbar__list {
+  display: flex;
+  column-gap: var(--space-2xs);
+  align-items: center;
+}
+
+.toolbar__list {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: var(--transition-duration);
+  transition-property: all;
+}
+
+.toolbar__list--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.toolbar__item,
+.toolbar__lock {
+  position: relative;
+}
+
+.toolbar__button {
+  padding: var(--space-2xs);
+}
+
+.toolbar__button,
+.toolbar__button:hover {
+  background-color: transparent;
+}
+
+.toolbar__button:before {
+  visibility: hidden;
+  position: absolute;
+  inset: 0;
+  transform: scale(0.75);
+  border-radius: var(--radius-md);
+  background-color: #f5f5f5;
+  content: '';
+  opacity: 0;
+  transition-duration: var(--transition-duration);
+  transition-property: all;
+}
+
+.toolbar__button:hover:before,
+.toolbar__button--is-active:before {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.toolbar__button:focus:hover:before,
+.toolbar__button--is-active:focus:before {
+  visibility: hidden;
+  transform: scale(0.75);
+  opacity: 0;
+}
+
+.toolbar__button-icon {
+  position: relative;
+}
+
+@media screen and (max-width: 48rem) {
+  .toolbar__left {
+    display: none;
+  }
+  .toolbar__center {
+    justify-content: normal;
+  }
+}

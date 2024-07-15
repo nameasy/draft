@@ -1,0 +1,52 @@
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + var(--border-width-medium));
+  left: 50%;
+  padding: var(--space-3xs) var(--space-2xs);
+  transform: translateX(-50%);
+  border-radius: var(--radius-sm);
+  /*border-radius: 50rem;*/
+  background-color: #171717;
+  color: #fff;
+  font-size: var(--text-sm);
+  text-align: center;
+  /*white-space: nowrap;*/
+  opacity: 0;
+  transition-delay: var(--transition-duration);
+  transition-duration: var(--transition-duration);
+  transition-property: all;
+  user-select: none;
+}
+
+.tooltip--left {
+  left: 0;
+  transform: none;
+}
+
+.tooltip--right {
+  right: 0;
+  left: auto;
+  transform: none;
+}
+
+.tooltip--is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*.tooltip__label:not(:last-child):after {
+  content: ' ';
+}*/
+
+.tooltip__shortcut {
+  color: #737373;
+  font-family: 'IBM Plex Mono', monospace;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 48rem) {
+  .tooltip {
+    display: none;
+  }
+}

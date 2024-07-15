@@ -1,0 +1,25 @@
+:focus {
+  outline: 0;
+}
+
+::selection {
+  background-color: #dbeafe;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  /*scrollbar-gutter: stable;*/
+}
+
+body {
+  background-color: #fff;
+  color: #171717;
+  font-size: var(--text-base);
+  line-height: 1.4;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
