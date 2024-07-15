@@ -23,6 +23,12 @@
   transition-property: border-color;*/
 }
 
+@media print {
+  .draft__header {
+    display: none;
+  }
+}
+
 .draft__content {
   display: flex;
   flex-grow: 1;
